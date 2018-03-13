@@ -1,0 +1,31 @@
+{
+  "orders": [{
+      "datetime": "2018-03-01T10:02:00Z",
+      "type": "BUY",
+      "volume": 10.4,
+      "price": 1.36,
+      "currency": "EUR"
+    },
+    {
+      "datetime": "2018-03-01T11:02:00Z",
+      "type": "SELL",
+      "volume": 10.4,
+      "price": 16,
+      "currency": "EUR"
+    },
+    {
+      "datetime": "2018-03-01T12:02:00Z",
+      "type": "BUY",
+      "volume": 10.4,
+      "price": 1.6,
+      "currency": "EUR"
+    },
+    {
+      "datetime": "2018-03-01T13:02:00Z",
+      "type": "SELL",
+      "volume": 10.4,
+      "price": 12.3,
+      "currency": "EUR"
+    }
+  ]
+}
