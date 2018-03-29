@@ -6,7 +6,7 @@ Wireframe can be found at  [wireframe.cc](https://wireframe.cc/uR5ws6).
 
 ## How
 
-All your code must be pushed to a branch with your name. Whenever you start the test, please *push* a file name `times` containing the time you started the tested.
+All your code must be pushed to a branch with your name. Whenever you start the test, please *push* a file name `times` containing the time you started the test.
 Whenever you have finished the test please also add the time in the times file.
 
 ## Back-end API
