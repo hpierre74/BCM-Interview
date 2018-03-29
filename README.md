@@ -11,7 +11,7 @@ Whenever you have finished the test please also add the time in the times file.
 
 ## Back-end API
 
-You must develop an API (ideally using express) that sends trading orders. The data are stored in the [large-dataset.json](large-dataset.json)) file.
+You must develop an API (ideally using express) that sends trading orders. The data are stored in the [large-dataset.json](large-dataset.json) file.
 
 The API should expose one endpoint:
 
@@ -31,9 +31,9 @@ GET /orders/TYPE?page=...
  ]
 }
 ```
-Where type can be :
+Where type in the URL can be :
   * SELL: only returns the orders that have a type set to SELL
-  * BUY: only returns the orders that have a type set to SELL
+  * BUY: only returns the orders that have a type set to BUY
   * ALL: return all the data, regardless of the type
 
 The `page` query string attribute starts from 0.
