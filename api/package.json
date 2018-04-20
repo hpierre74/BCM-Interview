@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Emits every second a new outage",
   "main": "ws.js",
+  "scripts": {
+    "start": "node api.js",
+    "start-ws": "node ws.js"
+  },
   "dependencies": {
     "express": "^4.16.3",
+    "fs": "0.0.1-security",
     "moment": "^2.21.0",
     "uuid": "^3.2.1",
     "ws": "^5.1.0"
