@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App-header {
+  background:#007bff;
+  padding: 1% 0;
+}
+
+.App-footer {
+  padding: 2.5%;
+  margin: 0 auto;
+  background:#007bff;
+
+}
