@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrdersTable component renders the children correctly renders correctly 1`] = `
+<div>
+  <table
+    className="OrdersLayout table table-striped"
+  >
+    <thead>
+      <tr
+        className="OrdersLayout-header"
+      >
+        <th>
+          Date
+        </th>
+        <th>
+          Order
+        </th>
+        <th>
+          Volume
+        </th>
+        <th>
+          Price
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+           
+          01/01/2018 01:01:01
+        </td>
+        <td>
+           
+          ALL
+           
+        </td>
+        <td>
+           
+          10
+           
+        </td>
+        <td>
+           
+          2 EUR
+           
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

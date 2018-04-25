@@ -10,6 +10,8 @@ import {
   Brush
 } from "recharts";
 import mtz from "moment-timezone";
+import PropTypes from 'prop-types';
+
 
 const OrdersGraph = props => {
   // Add readable date entry to improve readability
@@ -52,4 +54,18 @@ const OrdersGraph = props => {
   );
 };
 
+OrdersGraph.propTypes = {
+  title: PropTypes.string,
+  primary: PropTypes.string.isRequired,
+  secondary: PropTypes.string.isRequired,
+  data: PropTypes.oneOfType([
+    PropTypes.shape({
+      datetime: PropTypes.instanceOf(Date),
+      type: PropTypes.string,
+      volume: PropTypes.number,
+      currency: PropTypes.string
+    }),
+    PropTypes.array
+  ]).isRequired
+}
 export default OrdersGraph;

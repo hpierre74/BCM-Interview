@@ -1,0 +1,28 @@
+import OrdersTable from '../components/OrdersBoard/OrdersTable';
+import React from 'react';
+import { mount } from 'enzyme';
+import renderer from 'react-test-renderer';
+import Orders from '../services/orders';
+import mtz from "moment-timezone";
+
+
+
+
+let data=[{
+    datetime: mtz(new Date('2018/01/01 01:01:01').toISOString()).tz("Europe/Paris").format(),
+    type: 'ALL',
+    volume: 10,
+    price: 2,
+    currency: 'EUR'
+}]
+
+describe('OrdersTable component renders the children correctly', () => {
+    it('renders correctly', () => {  
+        const rendered = renderer.create(
+        <OrdersTable 
+            orders={data}
+        />
+      );
+      expect(rendered.toJSON()).toMatchSnapshot();
+    });
+  });

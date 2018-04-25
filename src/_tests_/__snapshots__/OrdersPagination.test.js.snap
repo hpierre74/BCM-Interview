@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrdersPagination component renders the children correctly renders correctly 1`] = `
+<ul
+  className="pagination"
+  style={
+    Object {
+      "display": "flex",
+      "flexFlow": "row wrap",
+      "justifyContent": "flex-end",
+      "maxWidth": "100%",
+    }
+  }
+>
+  <li
+    className="page-item"
+  >
+    <a
+      aria-label="Previous"
+      className="page-link"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden="true"
+      >
+        «
+      </span>
+      <span
+        className="sr-only"
+      >
+        Previous
+      </span>
+    </a>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      aria-label={undefined}
+      className="page-link"
+    >
+       
+      0
+       
+    </a>
+  </li>
+  <li
+    className="page-item"
+  >
+    <a
+      aria-label="Next"
+      className="page-link"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden="true"
+      >
+        »
+      </span>
+      <span
+        className="sr-only"
+      >
+        Next
+      </span>
+    </a>
+  </li>
+  <input
+    className="form-control"
+    id="pickPage"
+    name="pickPage"
+    onChange={[Function]}
+    placeholder="go to"
+    style={
+      Object {
+        "width": "100px",
+      }
+    }
+    type="number"
+  />
+</ul>
+`;

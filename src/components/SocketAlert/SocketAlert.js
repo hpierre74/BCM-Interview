@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { UncontrolledAlert } from "reactstrap";
+import { Alert } from "reactstrap";
 import moment from "moment";
+
 
 class SocketAlert extends Component {
   constructor(props) {
@@ -18,6 +19,9 @@ class SocketAlert extends Component {
     this.getSocketMessage();
   }
 
+  componentWillUnmount() {
+  }
+
   displaySocketAlert() {
     let style = {
       width: window.innerWidth > 1000 ? "50%" : "100%",
@@ -26,10 +30,10 @@ class SocketAlert extends Component {
       top: window.innerHeight - 50 + "px"
     };
     return (
-      <UncontrolledAlert style={style} color={this.props.type}>
+      <Alert style={style} color={this.props.type}>
         New outage from <b>{this.state.startTime}</b> to{" "}
         <b>{this.state.endTime}</b> at {this.state.power_plant}
-      </UncontrolledAlert>
+      </Alert>
     );
   }
 

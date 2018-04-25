@@ -1,5 +1,6 @@
 import React from "react";
 import { Pagination, PaginationItem, PaginationLink, Input } from "reactstrap";
+import PropTypes from 'prop-types';
 
 const OrdersPagination = props => {
   const { page, paginate } = props;
@@ -32,4 +33,10 @@ const OrdersPagination = props => {
     </Pagination>
   );
 };
+
+OrdersPagination.propTypes= {
+  page: PropTypes.number.isRequired,
+  paginate: PropTypes.func.isRequired,
+}
+
 export default OrdersPagination;

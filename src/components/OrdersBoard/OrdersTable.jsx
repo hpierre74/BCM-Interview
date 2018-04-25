@@ -1,6 +1,7 @@
 import React from "react";
 import { Table } from "reactstrap";
 import mtz from "moment-timezone";
+import PropTypes from 'prop-types';
 
 const OrdersTable = props => {
   const { orders } = props;
@@ -32,5 +33,18 @@ const OrdersTable = props => {
     </div>
   );
 };
+
+OrdersTable.propTypes = {
+  orders: PropTypes.oneOfType([
+    PropTypes.shape({
+      datetime: PropTypes.instanceOf(Date),
+      type: PropTypes.string,
+      volume: PropTypes.number,
+      price: PropTypes.number,
+      currency: PropTypes.string
+    }),
+    PropTypes.array
+  ]).isRequired
+}
 
 export default OrdersTable;
