@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -9,16 +9,16 @@ import {
   Legend,
   Brush
 } from "recharts";
-import moment from "moment";
+import mtz from "moment-timezone";
 
 const OrdersGraph = props => {
-
-  // Unnecessary loop to improve user dates readability
-  // Workaround / additional instructions about date displaying needed
+  // Add readable date entry to improve readability
   const groupDates = () => {
     const newData = [];
     Object.values(props.data).map((order, index) => {
-      order.date = moment(order.datetime).format("DD/MM/YYYY");
+      order.date = mtz(order.datetime)
+        .tz("Europe/Paris")
+        .format("DD/MM/YYYY HH:mm");
       return newData.push(order);
     });
     return newData;
@@ -27,7 +27,7 @@ const OrdersGraph = props => {
   return (
     <div>
       <h1> {props.title} </h1>
-      <LineChart
+      <AreaChart
         width={window.innerWidth / 2.5}
         height={300}
         data={groupDates()}
@@ -39,14 +39,15 @@ const OrdersGraph = props => {
         <Tooltip />
         <Legend />
         <Brush dataKey="date" height={30} stroke={props.primary} />
-        <Line
+        <Area
           type="monotone"
           dataKey="price"
           stroke={props.primary}
           activeDot={{ r: 8 }}
+          fill={props.secondary}
         />
-        <Line type="monotone" dataKey="datetime" stroke={props.secondary} />
-      </LineChart>
+        <Area type="monotone" dataKey="datetime" stroke={props.secondary} />
+      </AreaChart>
     </div>
   );
 };

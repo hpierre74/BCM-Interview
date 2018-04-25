@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "reactstrap";
-import moment from "moment";
+import mtz from "moment-timezone";
 
 const OrdersTable = props => {
   const { orders } = props;
@@ -8,7 +8,7 @@ const OrdersTable = props => {
     return Object.values(orders).map((order, index) => {
       return (
         <tr key={index}>
-          <td> {moment(order.datetime).format("DD/MM/YYYY HH:mm:ss")}</td>
+          <td> {mtz(order.datetime).tz("Europe/Paris").format("DD/MM/YYYY HH:mm:ss")}</td>
           <td> {order.type} </td>
           <td> {order.volume} </td>
           <td> {order.price + " " + order.currency} </td>

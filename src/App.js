@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import SocketAlert from './components/SocketAlert/SocketAlert';
-import OrdersLayout from "./components/Orders/OrdersLayout";
+import React, { Component } from "react";
+import SocketAlert from "./components/SocketAlert/SocketAlert";
+import OrdersLayout from "./components/OrdersBoard/OrdersLayout";
 
 class App extends Component {
   render() {
@@ -11,9 +11,9 @@ class App extends Component {
         </header>
         <main>
           <OrdersLayout />
+          <SocketAlert type="info" />
         </main>
-        <SocketAlert type='info' />
-        <footer className='App-footer'>
+        <footer className="App-footer">
           BCM Energy, React Interview | Pierre Huyghe
         </footer>
       </div>
