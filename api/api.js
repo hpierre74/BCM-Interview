@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var cors = require('cors');
 var bodyParser = require('body-parser');
 const http = require('http');
 let fs = require('fs');
@@ -8,6 +9,7 @@ var app = express();
 /**
  * returns the orders that have the corresponding type
  */
+app.use(cors(true));
 app.use('/orders/:type', (req, res) => {
     if (typeof (req.query.page) == "undefined") {
         page = -1
