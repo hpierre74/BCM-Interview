@@ -6,13 +6,24 @@ body {
 }
 
 .App-header {
-  background:#007bff;
-  padding: 1% 0;
+  background:deepskyblue;
+  padding: 0.5% 0;
+}
+
+.App-header h3 {
+  text-align: left;
+  margin-left: 1rem
 }
 
 .App-footer {
-  padding: 2.5%;
+  padding: 1% 0 5%;
   margin: 0 auto;
-  background:#007bff;
+  background:deepskyblue;
 
+}
+
+.paper {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
 }

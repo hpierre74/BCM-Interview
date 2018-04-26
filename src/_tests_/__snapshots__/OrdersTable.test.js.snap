@@ -3,11 +3,11 @@
 exports[`OrdersTable component renders the children correctly renders correctly 1`] = `
 <div>
   <table
-    className="OrdersLayout table table-striped"
+    className="OrdersTable paper table table-striped"
   >
     <thead>
       <tr
-        className="OrdersLayout-header"
+        className="OrdersTable-header"
       >
         <th>
           Date
@@ -37,7 +37,7 @@ exports[`OrdersTable component renders the children correctly renders correctly 
         <td>
            
           10
-           
+           MW 
         </td>
         <td>
            

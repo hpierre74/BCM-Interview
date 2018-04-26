@@ -2,6 +2,7 @@ import React from "react";
 import { Table } from "reactstrap";
 import mtz from "moment-timezone";
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 const OrdersTable = props => {
   const { orders } = props;
@@ -11,7 +12,7 @@ const OrdersTable = props => {
         <tr key={index}>
           <td> {mtz(order.datetime).tz("Europe/Paris").format("DD/MM/YYYY HH:mm:ss")}</td>
           <td> {order.type} </td>
-          <td> {order.volume} </td>
+          <td> {order.volume} MW </td>
           <td> {order.price + " " + order.currency} </td>
         </tr>
       );
@@ -19,9 +20,9 @@ const OrdersTable = props => {
   };
   return (
     <div>
-      <Table striped className="OrdersLayout">
+      <Table striped className={classNames("OrdersTable", "paper")}>
         <thead>
-          <tr className="OrdersLayout-header">
+          <tr className="OrdersTable-header">
             <th>Date</th>
             <th>Order</th>
             <th>Volume</th>

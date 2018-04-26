@@ -1,12 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`OrdersGraph component renders the children correctly renders correctly 1`] = `
-<div>
-  <h1>
+<div
+  style={
+    Object {
+      "justifyContent": "center",
+    }
+  }
+>
+  <h4>
      
     Buying Orders
      
-  </h1>
+  </h4>
   <div
     className="recharts-wrapper"
     onMouseEnter={[Function]}
@@ -17,8 +23,9 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
       Object {
         "cursor": "default",
         "height": 300,
+        "margin": "5px auto",
         "position": "relative",
-        "width": 409.6,
+        "width": 700,
       }
     }
   >
@@ -27,8 +34,8 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
       height={300}
       style={undefined}
       version="1.1"
-      viewBox="0 0 409.6 300"
-      width={409.6}
+      viewBox="0 0 700 300"
+      width={700}
     >
       <g
         className="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
@@ -38,10 +45,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
           fill="none"
           height={30}
           stroke="#666"
-          width={299.6}
-          x={80}
-          x1={80}
-          x2={379.6}
+          width={640}
+          x={60}
+          x1={60}
+          x2={700}
           y={235}
           y1={235}
           y2={235}
@@ -57,10 +64,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               fill="none"
               height={30}
               stroke="#666"
-              width={299.6}
-              x={80}
-              x1={229.8}
-              x2={229.8}
+              width={640}
+              x={60}
+              x1={380}
+              x2={380}
               y={235}
               y1={241}
               y2={235}
@@ -71,13 +78,13 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               height={30}
               stroke="none"
               textAnchor="middle"
-              width={299.6}
-              x={229.8}
+              width={640}
+              x={380}
               y={243}
             >
               <tspan
                 dy="0.71em"
-                x={229.8}
+                x={380}
               >
                 01/01/2018 01:01
               </tspan>
@@ -94,9 +101,9 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
           height={230}
           stroke="#666"
           width={60}
-          x={20}
-          x1={80}
-          x2={80}
+          x={0}
+          x1={60}
+          x2={60}
           y={5}
           y1={5}
           y2={235}
@@ -113,9 +120,9 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               height={230}
               stroke="#666"
               width={60}
-              x={20}
-              x1={74}
-              x2={80}
+              x={0}
+              x1={54}
+              x2={60}
               y={5}
               y1={235}
               y2={235}
@@ -127,12 +134,12 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               stroke="none"
               textAnchor="end"
               width={60}
-              x={72}
+              x={52}
               y={235}
             >
               <tspan
                 dy="0.355em"
-                x={72}
+                x={52}
               >
                 0
               </tspan>
@@ -147,9 +154,9 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               height={230}
               stroke="#666"
               width={60}
-              x={20}
-              x1={74}
-              x2={80}
+              x={0}
+              x1={54}
+              x2={60}
               y={5}
               y1={177.5}
               y2={177.5}
@@ -161,12 +168,12 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               stroke="none"
               textAnchor="end"
               width={60}
-              x={72}
+              x={52}
               y={177.5}
             >
               <tspan
                 dy="0.355em"
-                x={72}
+                x={52}
               >
                 0.5
               </tspan>
@@ -181,9 +188,9 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               height={230}
               stroke="#666"
               width={60}
-              x={20}
-              x1={74}
-              x2={80}
+              x={0}
+              x1={54}
+              x2={60}
               y={5}
               y1={120}
               y2={120}
@@ -195,12 +202,12 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               stroke="none"
               textAnchor="end"
               width={60}
-              x={72}
+              x={52}
               y={120}
             >
               <tspan
                 dy="0.355em"
-                x={72}
+                x={52}
               >
                 1
               </tspan>
@@ -215,9 +222,9 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               height={230}
               stroke="#666"
               width={60}
-              x={20}
-              x1={74}
-              x2={80}
+              x={0}
+              x1={54}
+              x2={60}
               y={5}
               y1={62.5}
               y2={62.5}
@@ -229,12 +236,12 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               stroke="none"
               textAnchor="end"
               width={60}
-              x={72}
+              x={52}
               y={62.5}
             >
               <tspan
                 dy="0.355em"
-                x={72}
+                x={52}
               >
                 1.5
               </tspan>
@@ -249,9 +256,9 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               height={230}
               stroke="#666"
               width={60}
-              x={20}
-              x1={74}
-              x2={80}
+              x={0}
+              x1={54}
+              x2={60}
               y={5}
               y1={5}
               y2={5}
@@ -263,12 +270,12 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
               stroke="none"
               textAnchor="end"
               width={60}
-              x={72}
+              x={52}
               y={5}
             >
               <tspan
                 dy="0.355em"
-                x={72}
+                x={52}
               >
                 2
               </tspan>
@@ -287,10 +294,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={230}
             stroke="#ccc"
             strokeDasharray="3 3"
-            width={299.6}
-            x={80}
-            x1={80}
-            x2={379.6}
+            width={640}
+            x={60}
+            x1={60}
+            x2={700}
             y={5}
             y1={235}
             y2={235}
@@ -300,10 +307,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={230}
             stroke="#ccc"
             strokeDasharray="3 3"
-            width={299.6}
-            x={80}
-            x1={80}
-            x2={379.6}
+            width={640}
+            x={60}
+            x1={60}
+            x2={700}
             y={5}
             y1={177.5}
             y2={177.5}
@@ -313,10 +320,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={230}
             stroke="#ccc"
             strokeDasharray="3 3"
-            width={299.6}
-            x={80}
-            x1={80}
-            x2={379.6}
+            width={640}
+            x={60}
+            x1={60}
+            x2={700}
             y={5}
             y1={120}
             y2={120}
@@ -326,10 +333,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={230}
             stroke="#ccc"
             strokeDasharray="3 3"
-            width={299.6}
-            x={80}
-            x1={80}
-            x2={379.6}
+            width={640}
+            x={60}
+            x1={60}
+            x2={700}
             y={5}
             y1={62.5}
             y2={62.5}
@@ -339,10 +346,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={230}
             stroke="#ccc"
             strokeDasharray="3 3"
-            width={299.6}
-            x={80}
-            x1={80}
-            x2={379.6}
+            width={640}
+            x={60}
+            x1={60}
+            x2={700}
             y={5}
             y1={5}
             y2={5}
@@ -356,10 +363,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={230}
             stroke="#ccc"
             strokeDasharray="3 3"
-            width={299.6}
-            x={80}
-            x1={229.8}
-            x2={229.8}
+            width={640}
+            x={60}
+            x1={380}
+            x2={380}
             y={5}
             y1={5}
             y2={235}
@@ -369,10 +376,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={230}
             stroke="#ccc"
             strokeDasharray="3 3"
-            width={299.6}
-            x={80}
-            x1={80}
-            x2={80}
+            width={640}
+            x={60}
+            x1={60}
+            x2={60}
             y={5}
             y1={5}
             y2={235}
@@ -382,10 +389,10 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={230}
             stroke="#ccc"
             strokeDasharray="3 3"
-            width={299.6}
-            x={80}
-            x1={379.6}
-            x2={379.6}
+            width={640}
+            x={60}
+            x1={700}
+            x2={700}
             y={5}
             y1={5}
             y2={235}
@@ -413,8 +420,8 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
           fill="#fff"
           height={30}
           stroke="#8884d8"
-          width={299.6}
-          x={80}
+          width={640}
+          x={60}
           y={265}
         />
         <rect
@@ -433,7 +440,7 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             }
           }
           width={0}
-          x={227.3}
+          x={377.5}
           y={265}
         />
         <g
@@ -453,22 +460,22 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={30}
             stroke="none"
             width={5}
-            x={227.3}
+            x={377.5}
             y={265}
           />
           <line
             fill="none"
             stroke="#fff"
-            x1={228.3}
-            x2={231.3}
+            x1={378.5}
+            x2={381.5}
             y1={279}
             y2={279}
           />
           <line
             fill="none"
             stroke="#fff"
-            x1={228.3}
-            x2={231.3}
+            x1={378.5}
+            x2={381.5}
             y1={281}
             y2={281}
           />
@@ -490,22 +497,22 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             height={30}
             stroke="none"
             width={5}
-            x={227.3}
+            x={377.5}
             y={265}
           />
           <line
             fill="none"
             stroke="#fff"
-            x1={228.3}
-            x2={231.3}
+            x1={378.5}
+            x2={381.5}
             y1={279}
             y2={279}
           />
           <line
             fill="none"
             stroke="#fff"
-            x1={228.3}
-            x2={231.3}
+            x1={378.5}
+            x2={381.5}
             y1={281}
             y2={281}
           />
@@ -519,23 +526,16 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
         >
           <circle
             className="recharts-dot recharts-area-dot"
-            cx={229.8}
+            cx={380}
             cy={5}
             fill="#82ca9d"
             fillOpacity={0.6}
             height={230}
             r={3}
             stroke="#8884d8"
-            width={299.6}
+            width={640}
           />
         </g>
-      </g>
-      <g
-        className="recharts-layer recharts-area"
-      >
-        <g
-          className="recharts-layer recharts-area-dots"
-        />
       </g>
     </svg>
     <div
@@ -544,9 +544,9 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
         Object {
           "bottom": 5,
           "height": "auto",
-          "left": 20,
+          "left": 0,
           "position": "absolute",
-          "width": 359.6,
+          "width": 700,
         }
       }
     >
@@ -598,46 +598,6 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
             className="recharts-legend-item-text"
           >
             price
-          </span>
-        </li>
-        <li
-          className="recharts-legend-item legend-item-1"
-          style={
-            Object {
-              "display": "inline-block",
-              "marginRight": 10,
-            }
-          }
-        >
-          <svg
-            className="recharts-surface"
-            height={14}
-            style={
-              Object {
-                "display": "inline-block",
-                "marginRight": 4,
-                "verticalAlign": "middle",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 32 32"
-            width={14}
-          >
-            <path
-              className="recharts-legend-icon"
-              d="M0,16h10.666666666666666
-                        A5.333333333333333,5.333333333333333,0,1,1,21.333333333333332,16
-                        H32M21.333333333333332,16
-                        A5.333333333333333,5.333333333333333,0,1,1,10.666666666666666,16"
-              fill="none"
-              stroke="#82ca9d"
-              strokeWidth={4}
-            />
-          </svg>
-          <span
-            className="recharts-legend-item-text"
-          >
-            datetime
           </span>
         </li>
       </ul>

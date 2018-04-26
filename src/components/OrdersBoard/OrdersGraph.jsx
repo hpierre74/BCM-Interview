@@ -1,6 +1,7 @@
 import React from "react";
 import {
-  AreaChart,
+  ComposedChart,
+  Line, 
   Area,
   XAxis,
   YAxis,
@@ -27,13 +28,14 @@ const OrdersGraph = props => {
   };
 
   return (
-    <div>
-      <h1> {props.title} </h1>
-      <AreaChart
-        width={window.innerWidth / 2.5}
+    <div style={{justifyContent: 'center'}}>
+      <h4> {props.title} </h4>
+      <ComposedChart
+        width={window.innerWidth > 1200 ? 500 : window.innerWidth > 700 ? 700 : 500}
         height={300}
         data={groupDates()}
-        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+        margin={{ top: 5, right: 0, left: 0, bottom: 5 }}
+        style={{margin: '5px auto'}}
       >
         <XAxis dataKey="date" />
         <YAxis />
@@ -48,8 +50,8 @@ const OrdersGraph = props => {
           activeDot={{ r: 8 }}
           fill={props.secondary}
         />
-        <Area type="monotone" dataKey="datetime" stroke={props.secondary} />
-      </AreaChart>
+        {/* <Line type="monotone" dataKey="volume" stroke={props.secondary} dot={false} /> */}
+      </ComposedChart>
     </div>
   );
 };

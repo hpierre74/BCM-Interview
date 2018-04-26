@@ -35,7 +35,10 @@ const OrdersPagination = props => {
 };
 
 OrdersPagination.propTypes= {
-  page: PropTypes.number.isRequired,
+  page: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string
+  ]).isRequired,
   paginate: PropTypes.func.isRequired,
 }
 

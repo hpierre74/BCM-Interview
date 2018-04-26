@@ -3,7 +3,11 @@ import { Container, Row, Col } from "reactstrap";
 import OrdersTable from "./OrdersTable";
 import OrdersPagination from "./OrdersPagination";
 import OrdersGraph from "./OrdersGraph";
+import OrdersNav from './OrdersNav';
 import Orders from "../../services/Orders";
+
+import './OrdersBoard.css';
+
 
 class OrdersLayout extends Component {
   constructor(props) {
@@ -48,14 +52,15 @@ class OrdersLayout extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container className='OrdersLayout' fluid>
         <Row>
           <Col style={{ backgroundColor: "#434449" }} sm="2" md="2" xs="2">
-            Orders...
+            <OrdersNav />
           </Col>
-          <Col>
+          <Col  sm="10" md="10" xs="10">
             <Row>
               <Col>
+                <h2>Orders Board</h2>
                 <OrdersTable
                   orders={this.state.current}
                 />
@@ -66,7 +71,7 @@ class OrdersLayout extends Component {
               </Col>
             </Row>
             <Row>
-              <Col style={{ display: "flex", flexFlow: "row wrap" }}>
+              <Col style={{ display: "flex", flexFlow: "row wrap", justifyContent: 'center' }}>
                 <OrdersGraph
                   title="Selling Orders"
                   primary="#FF5733"

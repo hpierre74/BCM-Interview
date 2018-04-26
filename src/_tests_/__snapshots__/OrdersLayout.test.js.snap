@@ -2,7 +2,7 @@
 
 exports[`OrdersLayout component renders the children correctly renders correctly 1`] = `
 <div
-  className="container-fluid"
+  className="OrdersLayout container-fluid"
 >
   <div
     className="row"
@@ -15,10 +15,65 @@ exports[`OrdersLayout component renders the children correctly renders correctly
         }
       }
     >
-      Orders...
+      <ul
+        className="nav flex-column"
+      >
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="#"
+            onClick={[Function]}
+          >
+             
+            Wind power
+             
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="#"
+            onClick={[Function]}
+          >
+             
+            Biomass
+             
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="#"
+            onClick={[Function]}
+          >
+             
+            Solar
+             
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="#"
+            onClick={[Function]}
+          >
+             
+            Gas
+             
+          </a>
+        </li>
+      </ul>
     </div>
     <div
-      className="col"
+      className="col-10 col-sm-10 col-md-10"
     >
       <div
         className="row"
@@ -26,13 +81,16 @@ exports[`OrdersLayout component renders the children correctly renders correctly
         <div
           className="col"
         >
+          <h2>
+            Orders Board
+          </h2>
           <div>
             <table
-              className="OrdersLayout table table-striped"
+              className="OrdersTable paper table table-striped"
             >
               <thead>
                 <tr
-                  className="OrdersLayout-header"
+                  className="OrdersTable-header"
                 >
                   <th>
                     Date
@@ -139,15 +197,22 @@ exports[`OrdersLayout component renders the children correctly renders correctly
             Object {
               "display": "flex",
               "flexFlow": "row wrap",
+              "justifyContent": "center",
             }
           }
         >
-          <div>
-            <h1>
+          <div
+            style={
+              Object {
+                "justifyContent": "center",
+              }
+            }
+          >
+            <h4>
                
               Selling Orders
                
-            </h1>
+            </h4>
             <div
               className="recharts-wrapper"
               onMouseEnter={[Function]}
@@ -158,8 +223,9 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                 Object {
                   "cursor": "default",
                   "height": 300,
+                  "margin": "5px auto",
                   "position": "relative",
-                  "width": 409.6,
+                  "width": 700,
                 }
               }
             >
@@ -168,8 +234,8 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                 height={300}
                 style={undefined}
                 version="1.1"
-                viewBox="0 0 409.6 300"
-                width={409.6}
+                viewBox="0 0 700 300"
+                width={700}
               >
                 <g
                   className="recharts-cartesian-grid"
@@ -182,10 +248,10 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       height={230}
                       stroke="#ccc"
                       strokeDasharray="3 3"
-                      width={299.6}
-                      x={80}
-                      x1={80}
-                      x2={379.6}
+                      width={640}
+                      x={60}
+                      x1={60}
+                      x2={700}
                       y={5}
                       y1={5}
                       y2={5}
@@ -195,10 +261,10 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       height={230}
                       stroke="#ccc"
                       strokeDasharray="3 3"
-                      width={299.6}
-                      x={80}
-                      x1={80}
-                      x2={379.6}
+                      width={640}
+                      x={60}
+                      x1={60}
+                      x2={700}
                       y={5}
                       y1={235}
                       y2={235}
@@ -212,10 +278,10 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       height={230}
                       stroke="#ccc"
                       strokeDasharray="3 3"
-                      width={299.6}
-                      x={80}
-                      x1={80}
-                      x2={80}
+                      width={640}
+                      x={60}
+                      x1={60}
+                      x2={60}
                       y={5}
                       y1={5}
                       y2={235}
@@ -225,10 +291,10 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       height={230}
                       stroke="#ccc"
                       strokeDasharray="3 3"
-                      width={299.6}
-                      x={80}
-                      x1={379.6}
-                      x2={379.6}
+                      width={640}
+                      x={60}
+                      x1={700}
+                      x2={700}
                       y={5}
                       y1={5}
                       y2={235}
@@ -242,9 +308,9 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                   Object {
                     "bottom": 5,
                     "height": "auto",
-                    "left": 20,
+                    "left": 0,
                     "position": "absolute",
-                    "width": 359.6,
+                    "width": 700,
                   }
                 }
               >
@@ -298,46 +364,6 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       price
                     </span>
                   </li>
-                  <li
-                    className="recharts-legend-item legend-item-1"
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "marginRight": 10,
-                      }
-                    }
-                  >
-                    <svg
-                      className="recharts-surface"
-                      height={14}
-                      style={
-                        Object {
-                          "display": "inline-block",
-                          "marginRight": 4,
-                          "verticalAlign": "middle",
-                        }
-                      }
-                      version="1.1"
-                      viewBox="0 0 32 32"
-                      width={14}
-                    >
-                      <path
-                        className="recharts-legend-icon"
-                        d="M0,16h10.666666666666666
-                                  A5.333333333333333,5.333333333333333,0,1,1,21.333333333333332,16
-                                  H32M21.333333333333332,16
-                                  A5.333333333333333,5.333333333333333,0,1,1,10.666666666666666,16"
-                        fill="none"
-                        stroke="#FF8A33"
-                        strokeWidth={4}
-                      />
-                    </svg>
-                    <span
-                      className="recharts-legend-item-text"
-                    >
-                      datetime
-                    </span>
-                  </li>
                 </ul>
               </div>
               <div
@@ -382,12 +408,18 @@ exports[`OrdersLayout component renders the children correctly renders correctly
               </div>
             </div>
           </div>
-          <div>
-            <h1>
+          <div
+            style={
+              Object {
+                "justifyContent": "center",
+              }
+            }
+          >
+            <h4>
                
               Buying Orders
                
-            </h1>
+            </h4>
             <div
               className="recharts-wrapper"
               onMouseEnter={[Function]}
@@ -398,8 +430,9 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                 Object {
                   "cursor": "default",
                   "height": 300,
+                  "margin": "5px auto",
                   "position": "relative",
-                  "width": 409.6,
+                  "width": 700,
                 }
               }
             >
@@ -408,8 +441,8 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                 height={300}
                 style={undefined}
                 version="1.1"
-                viewBox="0 0 409.6 300"
-                width={409.6}
+                viewBox="0 0 700 300"
+                width={700}
               >
                 <g
                   className="recharts-cartesian-grid"
@@ -422,10 +455,10 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       height={230}
                       stroke="#ccc"
                       strokeDasharray="3 3"
-                      width={299.6}
-                      x={80}
-                      x1={80}
-                      x2={379.6}
+                      width={640}
+                      x={60}
+                      x1={60}
+                      x2={700}
                       y={5}
                       y1={5}
                       y2={5}
@@ -435,10 +468,10 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       height={230}
                       stroke="#ccc"
                       strokeDasharray="3 3"
-                      width={299.6}
-                      x={80}
-                      x1={80}
-                      x2={379.6}
+                      width={640}
+                      x={60}
+                      x1={60}
+                      x2={700}
                       y={5}
                       y1={235}
                       y2={235}
@@ -452,10 +485,10 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       height={230}
                       stroke="#ccc"
                       strokeDasharray="3 3"
-                      width={299.6}
-                      x={80}
-                      x1={80}
-                      x2={80}
+                      width={640}
+                      x={60}
+                      x1={60}
+                      x2={60}
                       y={5}
                       y1={5}
                       y2={235}
@@ -465,10 +498,10 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       height={230}
                       stroke="#ccc"
                       strokeDasharray="3 3"
-                      width={299.6}
-                      x={80}
-                      x1={379.6}
-                      x2={379.6}
+                      width={640}
+                      x={60}
+                      x1={700}
+                      x2={700}
                       y={5}
                       y1={5}
                       y2={235}
@@ -482,9 +515,9 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                   Object {
                     "bottom": 5,
                     "height": "auto",
-                    "left": 20,
+                    "left": 0,
                     "position": "absolute",
-                    "width": 359.6,
+                    "width": 700,
                   }
                 }
               >
@@ -536,46 +569,6 @@ exports[`OrdersLayout component renders the children correctly renders correctly
                       className="recharts-legend-item-text"
                     >
                       price
-                    </span>
-                  </li>
-                  <li
-                    className="recharts-legend-item legend-item-1"
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "marginRight": 10,
-                      }
-                    }
-                  >
-                    <svg
-                      className="recharts-surface"
-                      height={14}
-                      style={
-                        Object {
-                          "display": "inline-block",
-                          "marginRight": 4,
-                          "verticalAlign": "middle",
-                        }
-                      }
-                      version="1.1"
-                      viewBox="0 0 32 32"
-                      width={14}
-                    >
-                      <path
-                        className="recharts-legend-icon"
-                        d="M0,16h10.666666666666666
-                                  A5.333333333333333,5.333333333333333,0,1,1,21.333333333333332,16
-                                  H32M21.333333333333332,16
-                                  A5.333333333333333,5.333333333333333,0,1,1,10.666666666666666,16"
-                        fill="none"
-                        stroke="#82ca9d"
-                        strokeWidth={4}
-                      />
-                    </svg>
-                    <span
-                      className="recharts-legend-item-text"
-                    >
-                      datetime
                     </span>
                   </li>
                 </ul>

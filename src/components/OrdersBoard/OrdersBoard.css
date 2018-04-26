@@ -1,0 +1,11 @@
+.OrdersLayout h2 {
+    padding: 1.5%;
+}
+
+.OrdersTable {
+    margin: 1.5% auto;
+}
+
+.OrdersTable-header {
+    background: deepskyblue;
+}
