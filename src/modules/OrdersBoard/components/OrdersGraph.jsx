@@ -1,7 +1,6 @@
 import React from "react";
 import {
   ComposedChart,
-  Line, 
   Area,
   XAxis,
   YAxis,
@@ -28,7 +27,7 @@ const OrdersGraph = props => {
   };
 
   return (
-    <div style={{justifyContent: 'center'}}>
+    <div style={{justifyContent: 'space-between'}}>
       <h4> {props.title} </h4>
       <ComposedChart
         width={window.innerWidth > 1200 ? 500 : window.innerWidth > 700 ? 700 : 500}
@@ -50,7 +49,6 @@ const OrdersGraph = props => {
           activeDot={{ r: 8 }}
           fill={props.secondary}
         />
-        {/* <Line type="monotone" dataKey="volume" stroke={props.secondary} dot={false} /> */}
       </ComposedChart>
     </div>
   );

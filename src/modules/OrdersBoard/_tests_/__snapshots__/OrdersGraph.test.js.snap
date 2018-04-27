@@ -4,7 +4,7 @@ exports[`OrdersGraph component renders the children correctly renders correctly 
 <div
   style={
     Object {
-      "justifyContent": "center",
+      "justifyContent": "space-between",
     }
   }
 >

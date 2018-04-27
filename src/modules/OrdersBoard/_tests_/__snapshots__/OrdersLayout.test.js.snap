@@ -189,7 +189,7 @@ exports[`OrdersLayout component renders the children correctly renders correctly
         </div>
       </div>
       <div
-        className="row"
+        className="paper row"
       >
         <div
           className="col"
@@ -204,7 +204,7 @@ exports[`OrdersLayout component renders the children correctly renders correctly
           <div
             style={
               Object {
-                "justifyContent": "center",
+                "justifyContent": "space-between",
               }
             }
           >
@@ -411,7 +411,7 @@ exports[`OrdersLayout component renders the children correctly renders correctly
           <div
             style={
               Object {
-                "justifyContent": "center",
+                "justifyContent": "space-between",
               }
             }
           >

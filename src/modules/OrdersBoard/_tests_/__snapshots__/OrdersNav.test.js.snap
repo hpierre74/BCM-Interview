@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrdersNav component renders the children correctly renders correctly 1`] = `
+<ul
+  className="nav flex-column"
+>
+  <li
+    className="nav-item"
+  >
+    <a
+      className="nav-link"
+      href="#"
+      onClick={[Function]}
+    >
+       
+      Wind power
+       
+    </a>
+  </li>
+  <li
+    className="nav-item"
+  >
+    <a
+      className="nav-link"
+      href="#"
+      onClick={[Function]}
+    >
+       
+      Biomass
+       
+    </a>
+  </li>
+  <li
+    className="nav-item"
+  >
+    <a
+      className="nav-link"
+      href="#"
+      onClick={[Function]}
+    >
+       
+      Solar
+       
+    </a>
+  </li>
+  <li
+    className="nav-item"
+  >
+    <a
+      className="nav-link"
+      href="#"
+      onClick={[Function]}
+    >
+       
+      Gas
+       
+    </a>
+  </li>
+</ul>
+`;

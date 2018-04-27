@@ -5,26 +5,48 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.0",
+    "classnames": "^2.2.5",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
     "moment": "^2.22.1",
     "moment-timezone": "^0.5.16",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
     "reactstrap": "^5.0.0-beta.3",
     "recharts": "^1.0.0-beta.10",
-    "ws": "^5.1.1"
+    "redux": "^4.0.0",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "uuid": "^3.2.1",
+    "ws": "^5.1.0"
   },
   "scripts": {
+    "start-api": "node api/api.js",
+    "start-ws": "node api/ws.js",
     "start": "react-scripts start",
+    "dev": "concurrently --kill-others \"npm run start-ws\" \"npm run start-api\" \"npm start\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "enzyme": "^3.3.0",
     "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.3.2",
     "react-test-renderer": "^16.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BCM-ENERGY-team/react-interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BCM-ENERGY-team/react-interview/issues"
+  },
+  "homepage": "https://github.com/BCM-ENERGY-team/react-interview#readme"
 }

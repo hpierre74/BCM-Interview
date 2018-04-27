@@ -1,21 +1,15 @@
 ### Retour Test React
 
 ##### Getting started
-After starting WS and API servers
 
 Dev :
 ```bash
-cd into the branch
+cd react-interview
 npm install
-npm start
+npm run dev
 ```
-Prod: 
-```bash
-cd into the branch
-npm install
-npm run build
-node server.js
-```
+
+*No need to start the ws and api servers manually anymore, see `package.json`*
 
 
 #### Axes d'amélioration

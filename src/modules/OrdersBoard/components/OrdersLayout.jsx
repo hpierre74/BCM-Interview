@@ -4,7 +4,7 @@ import OrdersTable from "./OrdersTable";
 import OrdersPagination from "./OrdersPagination";
 import OrdersGraph from "./OrdersGraph";
 import OrdersNav from './OrdersNav';
-import Orders from "../../services/Orders";
+import Orders from "../../../services/Orders";
 
 import './OrdersBoard.css';
 
@@ -47,7 +47,7 @@ class OrdersLayout extends Component {
     e.preventDefault();
     page = page < 0 ? page = 0 : page; // prevent overload
     Orders.getOrders("ALL", this.saveOrders, page.toString());
-    this.setState({ page: page });
+    return this.setState({ page: page });
   }
 
   render() {
@@ -70,7 +70,7 @@ class OrdersLayout extends Component {
                 />
               </Col>
             </Row>
-            <Row>
+            <Row className='paper'>
               <Col style={{ display: "flex", flexFlow: "row wrap", justifyContent: 'center' }}>
                 <OrdersGraph
                   title="Selling Orders"

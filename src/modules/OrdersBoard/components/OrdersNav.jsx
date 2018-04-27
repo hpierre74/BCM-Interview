@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 const energies = {
     "1": "Wind power",
@@ -12,7 +13,7 @@ const OrdersNav = props => {
   const renderEnergyNavItem = () => {
     return Object.values(energies).map((energy, index) => {
       return (
-        <NavItem>
+        <NavItem key={index}>
           <NavLink href="#"> { energy } </NavLink>
         </NavItem>
       );
@@ -25,5 +26,9 @@ const OrdersNav = props => {
     </Nav>
   );
 };
+
+OrdersNav.propTypes = {
+    energies: PropTypes.object
+}
 
 export default OrdersNav;

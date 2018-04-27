@@ -1,8 +1,8 @@
-import OrdersGraph from '../components/OrdersBoard/OrdersGraph';
+import OrdersGraph from '../components/OrdersGraph';
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Orders from '../services/orders';
+import Orders from '../../../services/orders';
 import mtz from 'moment-timezone';
 
 

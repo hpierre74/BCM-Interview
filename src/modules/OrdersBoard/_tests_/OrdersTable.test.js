@@ -1,8 +1,8 @@
-import OrdersTable from '../components/OrdersBoard/OrdersTable';
+import OrdersTable from '../components/OrdersTable';
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Orders from '../services/orders';
+import Orders from '../../../services/orders';
 import mtz from "moment-timezone";
 
 

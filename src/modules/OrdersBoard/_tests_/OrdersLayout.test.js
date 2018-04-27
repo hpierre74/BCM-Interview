@@ -1,8 +1,8 @@
-import OrdersLayout from '../components/OrdersBoard/OrdersLayout';
+import OrdersLayout from '../components/OrdersLayout';
 import React from 'react';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Orders from '../services/orders';
+import Orders from '../../../services/orders';
 
 
 describe('OrdersLayout component renders the children correctly', () => {

@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { Container } from 'reactstrap';
+import React from "react";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import Main from "./components/Layout/Main";

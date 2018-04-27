@@ -1,8 +1,8 @@
-import OrdersPagination from "../components/OrdersBoard/OrdersPagination";
+import OrdersPagination from "../components/OrdersPagination";
 import React from "react";
 import { mount } from "enzyme";
 import renderer from "react-test-renderer";
-import Orders from "../services/orders";
+import Orders from "../../../services/orders";
 
 
 let paginate = () => {

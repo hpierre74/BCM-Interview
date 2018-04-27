@@ -50,7 +50,7 @@ server.listen(port, () => console.log(`API running on localhost:${port}`));
  */
 var importOrderBook = (type, page) => {
     return new Promise(function (resolve, reject) {
-        fs.readFile('../large-dataset.json', (err, data) => {
+        fs.readFile('./large-dataset.json', (err, data) => {
             if (err) throw err;
             orderBookRawData = JSON.parse(data);
             orderBookRawData = orderBookRawData.orders;
