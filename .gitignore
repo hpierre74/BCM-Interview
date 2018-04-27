@@ -4,7 +4,7 @@
 **/reducers
 reducer.js
 store.js
-**/ordersAction.js
-**/ordersReducer.js
+**/ordersActions.js
+**/ordersReducers.js
 
 **/build
